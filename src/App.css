@@ -1,38 +1,29 @@
 .App {
-  text-align: center;
-}
+	background-color: #1E2F89;
+	color: #DFC0C0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 100vh;
+	padding-left: 3em;
+	padding-right: 3em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App h1 {
+	text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.song-list {
+	margin-top: 1em;
+	list-style-type: none;
 }
-
-.App-link {
-  color: #61dafb;
+.song-list > li {
+	/* padding-bottom: 0.25em;
+	padding-top: 0.25em;
+	padding-left: 1em; */
+	padding: 0.25em 1em;
+	background-color: #1C58C1;
+	transition: padding 1s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.song-list > li:nth-child(even) {
+	background-color: #4122B3;
+}
+.song-list>li.selected{
+	padding-left: 2em;
 }
