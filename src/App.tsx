@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Spring from './components/Spring';
 
 interface Song {
     id: number,
@@ -49,13 +50,19 @@ function App() {
 
 
     return (
+		
         <main className="App">
+			<div>
             <h1> Coding songs </h1>
             <ul className="song-list">
                 {renderedList}
             </ul>
             <p> {selectedMessage}</p>
+			</div>
+			<Spring/>
         </main>
+	
+		
     );
 }
 // Listor i Vue:
